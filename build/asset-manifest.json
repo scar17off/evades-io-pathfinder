@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.ec267d3b.css",
-    "main.js": "/static/js/main.b540e58b.js",
-    "index.html": "/index.html",
-    "main.ec267d3b.css.map": "/static/css/main.ec267d3b.css.map",
-    "main.b540e58b.js.map": "/static/js/main.b540e58b.js.map"
+    "main.css": "/evades-io-pathfinder/static/css/main.ec267d3b.css",
+    "main.js": "/evades-io-pathfinder/static/js/main.78de335f.js",
+    "index.html": "/evades-io-pathfinder/index.html",
+    "main.ec267d3b.css.map": "/evades-io-pathfinder/static/css/main.ec267d3b.css.map",
+    "main.78de335f.js.map": "/evades-io-pathfinder/static/js/main.78de335f.js.map"
   },
   "entrypoints": [
     "static/css/main.ec267d3b.css",
-    "static/js/main.b540e58b.js"
+    "static/js/main.78de335f.js"
   ]
 }
