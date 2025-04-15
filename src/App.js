@@ -373,7 +373,7 @@ function App() {
           const distance = Math.sqrt(dx * dx + dy * dy);
           
           if (distance < player.radius + enemy.radius) {
-            collision = true;
+            let collision = true;
             setGameState(prev => ({ ...prev, collision: true }));
             setIsRunning(false);
           }
