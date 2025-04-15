@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useCallback } from 'react';
 import './App.css';
 import { Vector } from './utils/Vector';
 import { Normal } from './entities/Normal';
@@ -49,7 +49,7 @@ function App() {
   });
   const playerHistoryRef = useRef([]);
 
-  const calculatePath = (player, goalPos, enemies) => {
+  const calculatePath = useCallback((player, goalPos, enemies) => {
     const startTime = performance.now();
     
     const simEnemies = enemies.map(e => ({
@@ -82,7 +82,7 @@ function App() {
     statsRef.current.pathfindingTime = performance.now() - startTime;
     
     return path;
-  };
+  }, [config]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
