@@ -373,7 +373,6 @@ function App() {
           const distance = Math.sqrt(dx * dx + dy * dy);
           
           if (distance < player.radius + enemy.radius) {
-            let collision = true;
             setGameState(prev => ({ ...prev, collision: true }));
             setIsRunning(false);
           }
@@ -581,7 +580,7 @@ function App() {
         cancelAnimationFrame(animationIdRef.current);
       }
     };
-  }, [config, isRunning, gameState]);
+  }, [config, isRunning, gameState, calculatePath]);
 
   const resetSimulation = () => {
     // Reset player position
